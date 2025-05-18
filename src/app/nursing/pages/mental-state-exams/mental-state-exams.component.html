@@ -1,16 +1,39 @@
+<!-- Page title (translatable) -->
 <h2 class="title">{{ 'APP.MENTAL_STATE_EXAMS' | translate }}</h2>
 
+<!-- Container holding all exam cards -->
 <div class="exam-cards">
-  <div class="exam-card" *ngFor="let item of exams">
-    <img [src]="item.patient.photoUrl" alt="Patient photo" class="patient-photo" />
 
-    <h3>{{ item.patient.fullName }}</h3>
-    <p>{{ 'APP.BIRTH_DATE' | translate }}: {{ item.patient.birthDate }}</p>
-    <p>{{ 'APP.EXAM_DATE' | translate }}: {{ item.exam.examDate }}</p>
-    <p>{{ 'APP.EXAMINER' | translate }}: {{ item.examiner.fullName }}</p>
-    <p>{{ 'APP.NPI' | translate }}: {{ item.examiner.nationalProviderIdentifier }}</p>
-    <p class="total-score">
-      {{ 'APP.TOTAL_SCORE' | translate }}: {{ item.exam.totalScore }}
-    </p>
-  </div>
+  <!-- Iterate over enriched exam data -->
+  <mat-card class="exam-card" *ngFor="let item of exams">
+
+    <!-- Patient photo displayed as a centered avatar -->
+    <div class="avatar-container">
+      <img [src]="item.patient.photoUrl" alt="Patient photo" class="avatar" />
+    </div>
+
+    <!-- Exam information content -->
+    <mat-card-content>
+      <!-- Patient's full name -->
+      <h3>{{ item.patient.fullName }}</h3>
+
+      <!-- Patient's birth date -->
+      <p>{{ 'APP.BIRTH_DATE' | translate }}: {{ item.patient.birthDate }}</p>
+
+      <!-- Date when the exam was taken -->
+      <p>{{ 'APP.EXAM_DATE' | translate }}: {{ item.exam.examDate }}</p>
+
+      <!-- Full name of the examiner -->
+      <p>{{ 'APP.EXAMINER' | translate }}: {{ item.examiner.fullName }}</p>
+
+      <!-- National Provider Identifier of the examiner -->
+      <p>{{ 'APP.NPI' | translate }}: {{ item.examiner.nationalProviderIdentifier }}</p>
+
+      <!-- Calculated total score across all sections -->
+      <p class="total-score">
+        {{ 'APP.TOTAL_SCORE' | translate }}: <strong>{{ item.exam.totalScore }}</strong>
+      </p>
+    </mat-card-content>
+
+  </mat-card>
 </div>

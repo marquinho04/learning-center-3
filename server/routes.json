@@ -1,0 +1,5 @@
+{
+  "api/v1/examiners": "/examiners",
+  "api/v1/patients": "/patients",
+  "api/v1/mental-state-exams": "/mental-state-exams"
+}

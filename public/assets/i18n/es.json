@@ -1,0 +1,13 @@
+{
+  "APP": {
+    "HOME_PHRASE": "HIGN promueve la atención médica equitativa para los adultos mayores al educar a la fuerza laboral y a los futuros profesionales, informar las políticas, promover la investigación y brindar programas comunitarios.",
+    "MENTAL_STATE_EXAMS": "Evaluaciones de Salud Mental",
+    "BIRTH_DATE": "Fecha de Nacimiento",
+    "EXAM_DATE": "Fecha del Examen",
+    "EXAMINER": "Evaluador",
+    "NPI": "NPI",
+    "TOTAL_SCORE": "Puntaje Total"
+  },
+  "home": "Inicio",
+  "mental": "Evaluaciones de Salud Mental"
+}

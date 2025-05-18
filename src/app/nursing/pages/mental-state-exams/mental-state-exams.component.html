@@ -1,0 +1,16 @@
+<h2 class="title">{{ 'APP.MENTAL_STATE_EXAMS' | translate }}</h2>
+
+<div class="exam-cards">
+  <div class="exam-card" *ngFor="let item of exams">
+    <img [src]="item.patient.photoUrl" alt="Patient photo" class="patient-photo" />
+
+    <h3>{{ item.patient.fullName }}</h3>
+    <p>{{ 'APP.BIRTH_DATE' | translate }}: {{ item.patient.birthDate }}</p>
+    <p>{{ 'APP.EXAM_DATE' | translate }}: {{ item.exam.examDate }}</p>
+    <p>{{ 'APP.EXAMINER' | translate }}: {{ item.examiner.fullName }}</p>
+    <p>{{ 'APP.NPI' | translate }}: {{ item.examiner.nationalProviderIdentifier }}</p>
+    <p class="total-score">
+      {{ 'APP.TOTAL_SCORE' | translate }}: {{ item.exam.totalScore }}
+    </p>
+  </div>
+</div>

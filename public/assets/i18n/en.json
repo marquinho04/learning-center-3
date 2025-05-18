@@ -1,0 +1,13 @@
+{
+  "APP": {
+    "HOME_PHRASE": "HIGN advances equitable health care for older adults by educating the workforce and future professionals, informing policy, advancing research, and providing community programs.",
+    "MENTAL_STATE_EXAMS": "Mental State Exams",
+    "BIRTH_DATE": "Birth Date",
+    "EXAM_DATE": "Exam Date",
+    "EXAMINER": "Examiner",
+    "NPI": "NPI",
+    "TOTAL_SCORE": "Total Score"
+  },
+  "home": "Home",
+  "mental": "Mental State Exams"
+}

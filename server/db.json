@@ -1,0 +1,56 @@
+{
+  "examiners": [
+    {
+      "id": 1,
+      "firstName": "Susan",
+      "lastName": "Baker",
+      "nationalProviderIdentifier": "NPI123456"
+    },
+    {
+      "id": 2,
+      "firstName": "David",
+      "lastName": "Clark",
+      "nationalProviderIdentifier": "NPI789012"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "firstName": "George",
+      "lastName": "Smith",
+      "birthDate": "1945-07-12",
+      "photoUrl": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Linda",
+      "lastName": "Johnson",
+      "birthDate": "1947-03-25",
+      "photoUrl": "https://randomuser.me/api/portraits/women/2.jpg"
+    }
+  ],
+  "mental-state-exams": [
+    {
+      "id": 1,
+      "patientId": 1,
+      "examinerId": 1,
+      "examDate": "2024-04-10",
+      "orientationScore": 5,
+      "registrationScore": 3,
+      "attentionAndCalculationScore": 4,
+      "recallScore": 3,
+      "languageScore": 4
+    },
+    {
+      "id": 2,
+      "patientId": 2,
+      "examinerId": 2,
+      "examDate": "2024-04-12",
+      "orientationScore": 4,
+      "registrationScore": 2,
+      "attentionAndCalculationScore": 3,
+      "recallScore": 2,
+      "languageScore": 3
+    }
+  ]
+}
